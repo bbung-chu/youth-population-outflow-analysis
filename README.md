@@ -81,6 +81,7 @@ Status: ⏳ 대기
  지역별 청년 유출 원인 도출
  지역별 청년 유출 유형 정리
  데이터 기반 정책 및 해결 방안 제안
+
 📊 Analysis Process
 청년 순이동 데이터 수집
         ↓
@@ -99,6 +100,7 @@ Status: ⏳ 대기
 지역별 청년 유출 원인 유형화
         ↓
 지역별 맞춤형 정책 제안
+
 🗃️ Data
 Current Dataset
 
@@ -118,6 +120,7 @@ Future Datasets
 지역별 주거 데이터
 지역별 교육 데이터
 지역별 생활 및 문화 인프라 데이터
+
 🛠️ Tech Stack
 Python
 Pandas
@@ -131,6 +134,7 @@ Jupyter Notebook
 VS Code
 Git
 GitHub
+
 📁 Project Structure
 youth-population-outflow-analysis/
 │
@@ -159,6 +163,12 @@ youth-population-outflow-analysis/
 KOSIS의 시군구/성/연령(5세)별 순이동자수 데이터를 확보하여 data/raw/에 저장하였다.
 
 현재 해당 데이터를 기반으로 2015~2025년 전국 시군구별 청년층(19~34세)의 순이동 현황을 분석하고 있으며, 청년 인구 순유출 지역을 식별하는 것을 첫 번째 목표로 진행하고 있다.
+
+🔍 데이터 품질 이슈 처리
+
+전처리 과정에서 KOSIS 원본 데이터에 존재하는 여러 품질 이슈(폐지된 옛 행정구역 코드, 
+동명 행정구역 충돌, 군위군 관할 변경, 인천 남구→미추홀구 개명 등)를 발견하고 처리했다. 
+발견 과정과 처리 방법은 [DATA_QUALITY_LOG.md](./DATA_QUALITY_LOG.md)에 상세히 기록했다.
 
 Next Step
 원본 데이터 구조 확인
